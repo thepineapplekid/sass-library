@@ -1,0 +1,54 @@
+<section id="home">
+        
+    </section>
+    
+    <section id="platinum">
+        <div class="row">            
+            <div class="column">
+                <h1>Pokémon Platinum</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus commodi amet dolore expedita accusantium 
+                    fugit tempore sed! Nemo, quasi vitae? Facere exercitationem ipsa ullam, commodi magnam sit atque magni dolor 
+                    consectetur ut impedit similique suscipit libero molestiae officiis corrupti alias! Fugiat eaque, tenetur 
+                    maiores eum id sequi enim suscipit doloribus!
+                </p> 
+            </div>
+            <div class="column">
+                <img src="images/pokemon-platinum.jpeg" alt="platinum">
+            </div>
+        </div>
+    </section>
+    
+    <section id="emerald">
+        <div class="row">            
+            <div class="column">
+                <h1>Pokémon Emerald</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus commodi amet dolore expedita accusantium 
+                    fugit tempore sed! Nemo, quasi vitae? Facere exercitationem ipsa ullam, commodi magnam sit atque magni dolor 
+                    consectetur ut impedit similique suscipit libero molestiae officiis corrupti alias! Fugiat eaque, tenetur 
+                    maiores eum id sequi enim suscipit doloribus!
+                </p> 
+            </div>
+            <div class="column">
+                <img src="images/pokemon-emerald.jpeg" alt="emerald">
+            </div>
+        </div>
+    </section>
+    
+    <section id="gaia">
+        <div class="row">            
+            <div class="column">
+                <h1>Pokémon Gaia</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus commodi amet dolore expedita accusantium 
+                    fugit tempore sed! Nemo, quasi vitae? Facere exercitationem ipsa ullam, commodi magnam sit atque magni dolor 
+                    consectetur ut impedit similique suscipit libero molestiae officiis corrupti alias! Fugiat eaque, tenetur 
+                    maiores eum id sequi enim suscipit doloribus!
+                </p> 
+            </div>
+            <div class="column">
+                <img src="images/pokemon-gaia.png" alt="gaia">
+            </div>
+        </div>
+    </section>

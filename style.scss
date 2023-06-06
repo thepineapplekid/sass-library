@@ -1,0 +1,162 @@
+@import './mixins';
+@import './var';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #333;
+    color: #fff;
+    height: 100vh;
+    width: 100%;
+    line-height: 1.6;
+    overflow: hidden;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll; 
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 70px;
+    background: rgba(0,0,0,0.65);
+    
+    ul {
+        @include flexbox(space-around,'');
+        list-style: none;
+        width: 65%;
+        margin: $margin;
+        
+        li {
+            margin: 0 2.5rem;
+            padding: 1rem;
+            padding-top: 15px;
+
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $textcolor;
+                font-size: 20px;
+                transition: all 0.2s linear;
+                &:hover{
+                    color: rgb(147, 185, 255);
+                }
+              }
+          }
+      }
+  }
+  
+  section {
+    width: 100%;
+    height: 100vh; 
+    scroll-snap-align: center;
+  }
+  
+  section#home {
+    background: url(https://img.freepik.com/free-vector/abstract-black-texture-background-hexagon_206725-413.jpg?w=2000&t=st=1684528314~exp=1684528914~hmac=a9efd3a4d7ab0d9aa28fa3eef36fb76aa6fa193dcae836b38ae1b16478bd243f) no-repeat center/cover;;
+  }
+  
+  section#platinum {
+    background: url('https://images5.alphacoders.com/107/1073999.jpg') no-repeat center center/cover;;
+  }
+  
+  section#emerald {
+    background: url('https://images3.alphacoders.com/104/1046496.png') no-repeat center center/cover;;
+  }
+  
+  section#gaia {
+    background: url('https://images4.alphacoders.com/104/1041837.png') no-repeat center center/cover;;
+  }
+  
+  .pokeball {
+    @include flexbox(center,center);
+    width: 100%;
+    height: 45%;
+
+    img {
+      border-radius: 50%;
+      margin-top: 10rem;
+      width: 250px;
+      height: 250px;
+      @include rotate;
+    }
+  }
+
+  .title{
+    display: inline-block;
+    position: relative;
+    padding: 0 25% 10% 25%;
+    text-transform: uppercase;
+
+    .title_text{
+        font-size: 4rem;
+        font-weight: bold;
+        background-image: linear-gradient(180deg, #410d0d, rgb(128, 71, 71));
+        background-size: 100%;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border-right: 5px darkgray solid;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typing 3s , cursor .5s step-end infinite alternate;
+    }
+}
+@keyframes cursor{
+    50% {border-color: transparent;}
+}
+@keyframes typing {
+    from {width: 0;}
+}
+
+.row {
+  @include row;
+  @include flexbox(space-between,'');
+  .platinum-col {
+    @include column(rgb(255, 196, 196), rgb(188, 190, 209));
+
+    .giratina {
+      @include image;
+      @include highlight(15%, rgb(43, 0, 0));
+    }
+  }
+  .emerald-col {
+    @include column(rgb(180, 219, 200), rgb(129, 173, 151));
+
+    .yellow-ball {
+      width: 250px;
+      height: 250px;
+      opacity: 0.7;
+      display: block;
+      margin-left: $margin;
+      margin-right: $margin;
+      @include rotate;
+    }
+
+    .rayquaza {
+      @include image;
+      @include highlight(15%, rgb(101,163,132));
+    }
+  }
+  .gaia-col {
+    @include column(rgb(191, 201, 248), rgb(180, 191, 241));
+
+    .regigigas {
+      @include image;
+      @include highlight(15%,rgb(118, 140, 238));
+    }
+  }
+}
+
+
